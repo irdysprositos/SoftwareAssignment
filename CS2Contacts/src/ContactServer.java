@@ -1,5 +1,4 @@
 import java.sql.*;
-//import org.junit.Test;
 
 public class ContactServer {
     private Connection con;
@@ -9,7 +8,6 @@ public class ContactServer {
             String driver = "com.mysql.cj.jdbc.Driver";
             Class.forName(driver);
         } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         try {
@@ -91,17 +89,8 @@ public class ContactServer {
 
             return true;
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
             return false;
         }
     }
-
-//    @Test
-//    public void test1() throws Exception { // 下面方法有不同的异常，我直接抛出一个大的异常
-//        JDBCDemo j = new JDBCDemo();
-//
-//        j.delete(3);
-//
-//    }
 }
