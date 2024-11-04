@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://example/" xmlns:tns="http://example/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="calculatePersonalIncomeTax" type="tns:calculatePersonalIncomeTax"/>
+
+  <xs:element name="calculatePersonalIncomeTaxResponse" type="tns:calculatePersonalIncomeTaxResponse"/>
+
+  <xs:complexType name="calculatePersonalIncomeTax">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="calculatePersonalIncomeTaxResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
